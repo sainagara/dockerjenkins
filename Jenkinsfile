@@ -8,9 +8,7 @@ stages {
     stage('Docker compose build') {
         steps {
             echo '----------------- This is a docker-compose phase ----------'
-            sh 'docker version'
-            sh 'docker compose version'
-            sh 'docker-compose up'
+            sh 'docker compose up'
         }
     }
   }
